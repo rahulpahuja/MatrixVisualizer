@@ -14,7 +14,7 @@ public class DataReader{
        do {
           if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
           let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
-              if var matrixData = try? JSONDecoder().decode(MatrixData.self, from: jsonData){
+              if let matrixData = try? JSONDecoder().decode(MatrixData.self, from: jsonData){
                   completion(matrixData)
               }
               else {
