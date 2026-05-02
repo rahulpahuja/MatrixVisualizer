@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
     s.author           = { 'username' => 'rahulpahuja2015@gmail.com' }
     s.source           = { :git => 'https://github.com/rahulpahuja/MatrixVisualizer.git', :tag => s.version.to_s }
     s.ios.deployment_target = '12.0'
-    s.source_files = 'MatrixVisualizer/**/*.swift'
+   s.source_files = 'MatrixVisualizer/**/*.{swift}'
 end
